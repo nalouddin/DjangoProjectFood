@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card border-success mb-3">
+            <div class="card-header bg-transparent border-success">{{ item.item_name }}</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">{{ item.item_name }}</h5>
+                <p class="card-text">{{ item.item_desc }}</p>
+                <img src="{{ item.item_image.url }}" class="img-fluid" style="width: 500px" alt="{{ item.item_image }}">
+            </div>
+            <div class="card-footer bg-transparent border-success">{{ item.item_price }}</div>
+    </div>
+{% endblock %}
